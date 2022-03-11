@@ -8,7 +8,7 @@ const name = 'takumi'
 export const siteTitle = "takumi's website"
 
 const Layout = (props) => {
-    const { children, home } = props
+    const { children, home, contact } = props
     return (
     <div className={styles.container}>
         <Head>
@@ -58,7 +58,14 @@ const Layout = (props) => {
         {!home && (
             <div className={styles.backToHome}>
                 <Link href="/">
-                    <a>Back to home</a>
+                    <a className={styles.backLink}>Back to home</a>
+                </Link>
+            </div>
+        )}
+        {!contact && (
+            <div className={styles.backToHome}>
+                <Link href="/contact">
+                    <a>Contact</a>
                 </Link>
             </div>
         )}

@@ -1,0 +1,40 @@
+.icon_container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.icon {
+    font-size: 2rem;
+    color: rgb(168, 168, 168);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+}
+
+.input {
+    padding: .3rem .7rem;
+    font-size: .875rem;
+    color: #333;
+    outline: none;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.input_name {
+    height: 40px;
+}
+
+.button {
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    padding: .5rem 1rem;
+    cursor: pointer;
+    outline: none;
+    background-color: hsl(207, 100%, 62%);
+}
